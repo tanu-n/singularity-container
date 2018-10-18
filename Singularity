@@ -25,7 +25,7 @@ From: singularityhub/ubuntu
    export PATH=/usr/local/bin:$PATH
 
    cd /mpitestapp
-   mpicc -o mpi_hello_world mpi_hello_world.c
+   
    
    mkdir /go
    cd /go
