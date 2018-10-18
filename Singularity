@@ -51,11 +51,3 @@ From: singularityhub/ubuntu
 %runscript
    echo $LD_LIBRARY_PATH
    /mpitestapp/mpi_hello_world
-    export ETCDCTL_API=3
-   HOST_1=192.168.16.193
-   HOST_2=192.168.16.208
-   HOST_3=192.168.16.194
-   ENDPOINTS=$HOST_1:2379,$HOST_2:2379,$HOST_3:2379
-   $GOPATH/bin/etcdctl --endpoints=$ENDPOINTS member list
-   $GOPATH/bin/etcdctl --endpoints=$ENDPOINTS put foo bar
-   $GOPATH/bin/etcdctl --endpoints=$ENDPOINTS get foo
