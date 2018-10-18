@@ -5,8 +5,6 @@ From: singularityhub/ubuntu
    # make directory for test MPI program
    mkdir ${SINGULARITY_ROOTFS}/mpitestapp
    # copy test file into directory
-   cp mpi_hello_world.c ${SINGULARITY_ROOTFS}/mpitestapp/
-   cp get_key.sh ${SINGULARITY_ROOTFS}/mpitestapp/
 
 %post
    apt-get update
@@ -49,5 +47,4 @@ From: singularityhub/ubuntu
    export GOPATH
 	
 %runscript
-   echo $LD_LIBRARY_PATH
-   /mpitestapp/mpi_hello_world
+   echo "Helloooooooo!"
