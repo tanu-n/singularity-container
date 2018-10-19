@@ -5,6 +5,7 @@ From: singularityhub/ubuntu
    # make directory for test MPI program
    mkdir ${SINGULARITY_ROOTFS}/mpitestapp
    # copy test file into directory
+   cp get_key.sh ${SINGULARITY_ROOTFS}/mpitestapp/ 
 
 %post
    apt-get update
